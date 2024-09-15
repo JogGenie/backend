@@ -1,0 +1,22 @@
+{
+  "name": "jobgenie-backend",
+  "version": "1.0.0",
+  "description": "This is the backend service of JobGenie web application.",
+  "main": "main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "git+https://github.com/JogGenie/backend.git",
+  "author": "theshdb <shdb0011@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JogGenie/backend/issues"
+  },
+  "homepage": "https://github.com/JogGenie/backend#readme",
+  "private": false,
+  "dependencies": {
+    "eslint": "^9.10.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.2"
+  }
+}
