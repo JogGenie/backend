@@ -9,7 +9,6 @@ const off = 0, warn = 1, error = 2;
 export default [
   {
     files: ['**/*.ts', '**/*.tsx', '**/*.js'],  // Target TypeScript and JavaScript files
-    ignores: ['.eslintrc.js'],  // Ignore ESLint config files
     languageOptions: {
       ecmaVersion: 2020,  // Set ECMAScript 2020
       sourceType: 'module',  // Use ES Modules
@@ -53,3 +52,4 @@ export default [
     },
   },
 ];
+
