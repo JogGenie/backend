@@ -12,4 +12,3 @@ pool.on('connect', () => {
 });
 
 export default pool;
-
