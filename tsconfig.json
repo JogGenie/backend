@@ -1,18 +1,23 @@
 {
-  "$scheama": "https://json.schemastore.org/tsconfig",
+  "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Node 20",
   "version": "0.0.0",
   "compilerOptions": {
-    "lib": ["es2023"],
-    "module": "Node16",
-    "outDir": "./out",
-    "target": "es2022",
-    "skipLibCheck": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "sourceMap": true,
-    "forceConsistentCasingInFileNames": true,
-    "esModuleInterop": true,
-    "resolveJsonModule": true
-  }
+    "lib": ["es2023"],                      
+    "module": "Node16",                      
+    "outDir": "./out",                       
+    "target": "es2022",                      
+    "skipLibCheck": true,                    
+    "emitDecoratorMetadata": true,           // Required for class decorators (optional for Redis but useful for other use cases)
+    "experimentalDecorators": true,          
+    "sourceMap": true,                       
+    "forceConsistentCasingInFileNames": true, 
+    "esModuleInterop": true,                 // Interoperability with CommonJS modules (needed for Redis library)
+    "resolveJsonModule": true,               
+    "moduleResolution": "node",              
+    "strict": true,                          
+    "types": ["node", "redis"]               
+  },
+  "include": ["src/**/*.ts"],                 
+  "exclude": ["node_modules", "out"]          
 }
