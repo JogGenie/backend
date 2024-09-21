@@ -4,7 +4,11 @@
   "description": "This is the backend service of JobGenie web application.",
   "main": "main.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+  "start": "ts-node src/index.ts",
+  "lint": "eslint 'src/**/*.{ts,tsx}'",
+  "format": "prettier --write 'src/**/*.{ts,tsx}'"
   },
   "repository": "git+https://github.com/JogGenie/backend.git",
   "author": "theshdb <shdb0011@gmail.com>",
