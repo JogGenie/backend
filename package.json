@@ -6,6 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "migrate": "node-pg-migrate",
+    "migrate:generate": "node-pg-migrate create",
+    "migrate:revert": "node-pg-migrate down",
     "start": "tsc && node dist/app.js"
   },
   "repository": "git+https://github.com/JogGenie/backend.git",
