@@ -4,11 +4,11 @@
   "description": "This is the backend service of JobGenie web application.",
   "main": "main.ts",
   "scripts": {
-    "test": "mocha", // Updated to include Mocha for testing
-    "start": "ts-node src/index.ts", // Start script for running the backend
-    "build": "tsc", // TypeScript build script
-    "lint": "eslint 'src/**/*.{ts,tsx}'", // Linting command
-    "format": "prettier --write 'src/**/*.{ts,tsx}'" // Prettier formatting
+    "test": "mocha", // Mocha test runner
+    "start": "ts-node src/index.ts", // Start the server
+    "build": "tsc", // TypeScript build
+    "lint": "eslint 'src/**/*.{ts,tsx}'", // Linting script
+    "format": "prettier --write 'src/**/*.{ts,tsx}'" // Formatting script
   },
   "repository": {
     "type": "git",
@@ -22,23 +22,24 @@
   "homepage": "https://github.com/JogGenie/backend#readme",
   "private": false,
   "dependencies": {
-    "ioredis": "^5.2.0", // Added ioredis for Redis connection
+    "ioredis": "^5.2.0",
     "eslint": "^9.10.0",
     "prettier": "^3.3.3",
     "typescript": "^5.6.2",
-    "express": "^4.18.2", // Express added for server setup (if needed)
-    "apollo-server-express": "^3.11.1", // Apollo Server for GraphQL
-    "graphql": "^16.6.0" // GraphQL dependency
+    "express": "^4.18.2",
+    "apollo-server-express": "^3.11.1",
+    "graphql": "^16.6.0"
   },
   "devDependencies": {
-    "@types/node": "^20.4.2", // Node types
-    "@types/express": "^4.17.17", // Express types
-    "@types/mocha": "^10.0.1", // Mocha types for testing
-    "@types/chai": "^4.3.5", // Chai types for assertions
-    "@types/sinon": "^10.0.12", // Sinon types for mocks/stubs
-    "chai": "^4.3.7", // Chai assertion library
-    "mocha": "^10.2.0", // Mocha test runner
-    "sinon": "^15.0.2", // Sinon for test spies/stubs/mocks
-    "ts-node": "^10.9.1" // TypeScript Node.js integration for runtime
+    "@types/node": "^20.4.2",
+    "@types/express": "^4.17.17",
+    "@types/mocha": "^10.0.1",
+    "@types/chai": "^4.3.5",
+    "@types/sinon": "^10.0.12",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "sinon": "^15.0.2",
+    "ts-node": "^10.9.1"
   }
 }
+
