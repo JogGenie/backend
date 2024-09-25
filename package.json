@@ -4,11 +4,11 @@
   "description": "This is the backend service of JobGenie web application.",
   "main": "main.ts",
   "scripts": {
-    "test": "mocha", // Mocha test runner
-    "start": "ts-node src/index.ts", // Start the server
-    "build": "tsc", // TypeScript build
-    "lint": "eslint 'src/**/*.{ts,tsx}'", // Linting script
-    "format": "prettier --write 'src/**/*.{ts,tsx}'" // Formatting script
+    "test": "mocha",
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "format": "prettier --write 'src/**/*.{ts,tsx}'"
   },
   "repository": {
     "type": "git",
@@ -42,4 +42,5 @@
     "ts-node": "^10.9.1"
   }
 }
+
 
