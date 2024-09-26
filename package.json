@@ -4,9 +4,16 @@
   "description": "This is the backend service of JobGenie web application.",
   "main": "main.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "format": "prettier --write 'src/**/*.{ts,tsx}'"
   },
-  "repository": "git+https://github.com/JogGenie/backend.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JogGenie/backend.git"
+  },
   "author": "theshdb <shdb0011@gmail.com>",
   "license": "MIT",
   "bugs": {
@@ -15,8 +22,25 @@
   "homepage": "https://github.com/JogGenie/backend#readme",
   "private": false,
   "dependencies": {
+    "ioredis": "^5.2.0",
     "eslint": "^9.10.0",
     "prettier": "^3.3.3",
-    "typescript": "^5.6.2"
+    "typescript": "^5.6.2",
+    "express": "^4.18.2",
+    "apollo-server-express": "^3.11.1",
+    "graphql": "^16.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "@types/express": "^4.17.17",
+    "@types/mocha": "^10.0.1",
+    "@types/chai": "^4.3.5",
+    "@types/sinon": "^10.0.12",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "sinon": "^15.0.2",
+    "ts-node": "^10.9.1"
   }
 }
+
+
