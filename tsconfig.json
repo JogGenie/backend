@@ -5,7 +5,8 @@
   "compilerOptions": {
     "lib": ["es2023"],
     "module": "Node16",
-    "outDir": "./out",
+    "outDir": "dist",
+    "rootDir": "src",
     "target": "es2022",
     "skipLibCheck": true,
     "emitDecoratorMetadata": true,
@@ -14,5 +15,6 @@
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
     "resolveJsonModule": true
-  }
+  },
+  "include": ["src/**/*"]
 }
