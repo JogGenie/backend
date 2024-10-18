@@ -15,7 +15,10 @@
   "homepage": "https://github.com/JogGenie/backend#readme",
   "private": false,
   "dependencies": {
+    "dotenv": "^16.4.5",
     "eslint": "^9.10.0",
+    "express": "^4.21.0",
+    "express-openid-connect": "^2.17.1",
     "prettier": "^3.3.3",
     "typescript": "^5.6.2"
   }
